@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class player1 : MonoBehaviour
 {
-    private Rigidbody2D rb;
     private float speed = 0f;
     private float maxspeed = 10f;
     private float minspeed = 0f;
     private int grass = 0;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         speed = 0f;
     }
 

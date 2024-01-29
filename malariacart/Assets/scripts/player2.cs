@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class player2 : MonoBehaviour
 {
-    private Rigidbody2D rb;
     private float speed = 0f;
     private float maxspeed = 10f;
     private float minspeed = 0f;
     private int grass = 0;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         speed = 0f;
     }
 
@@ -68,7 +66,7 @@ public class player2 : MonoBehaviour
             transform.Rotate(0f, 0f, Random.Range(-30, 30), Space.Self);
         }
         if(collision.CompareTag("border")){
-            transform.position = new Vector2(1, -3.5f);
+            transform.position = new Vector2(1, -4.5f);
         }
         if(collision.CompareTag("cp1")){
             if(gameManager.p2cp < 1){
